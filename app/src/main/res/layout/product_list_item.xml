@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_margin"
+    android:paddingEnd="@dimen/activity_margin"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingStart="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="Milk" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/product_quantity_label"
+            android:textColor="@color/productDetailsPropertyTitleColor"
+            android:textSize="@dimen/product_details_property_title_text_size"
+            tools:text="Quantity: " />
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/quantity_label"
+            android:paddingLeft="16dp"
+            android:textColor="@color/productDetailsPropertyValueColor"
+            android:textSize="@dimen/product_details_property_value_text_size"
+            android:textStyle="bold"
+            tools:text="127" />
+
+        <Button
+            android:id="@+id/saleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#FFB74D"
+            android:drawableLeft="?android:attr/actionModeCutDrawable"
+            android:focusable="false"
+            android:text="@string/button_sell" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_price_label"
+            android:textColor="@color/productDetailsPropertyTitleColor"
+            android:textSize="@dimen/product_details_property_title_text_size"
+            tools:text="Price: " />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:textColor="@color/productDetailsPropertyValueColor"
+            android:textSize="@dimen/product_details_property_value_text_size"
+            android:textStyle="bold"
+            tools:text="54.20" />
+    </LinearLayout>
+
+</LinearLayout>

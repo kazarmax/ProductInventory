@@ -1,0 +1,77 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Inventory</string>
+    <string name="product_list_activity_label">Products</string>
+    <string name="empty_product_list_text">Product list is empty. Add new products using the button below</string>
+    <string name="product_quantity_label">Quantity: </string>
+    <string name="product_price_label">Price: </string>
+    <string name="button_sell">Sell</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+    <string name="action_delete_all_entries">Delete all products</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_order_more">Order more</string>
+
+    <string name="editor_insert_product_successful">Product saved</string>
+    <string name="editor_insert_product_failed">Error with saving product</string>
+
+    <string name="editor_update_product_successful">Product updated</string>
+    <string name="editor_update_product_failed">Error with updating product</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting all products [CHAR LIMIT=NONE] -->
+    <string name="delete_all_products_dialog_msg">Delete all products?</string>
+
+    <!-- Dialog button text for the option to confirm deletion [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current product has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+
+    <!-- Toast message in editor when user try to save product with empty fields [CHAR LIMIT=NONE] -->
+    <string name="editor_save_product_with_empty_fields">All fields must be filled in</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_successful">Product deleted</string>
+
+    <!-- Toast message when deletion of products has failed [CHAR LIMIT=NONE] -->
+    <string name="delete_all_products_failed">Error with deleting products</string>
+
+    <string name="delete_all_products_successful">Deleted rows: <xliff:g example="5" id="numOfRowsDeleted">%d</xliff:g></string>
+
+    <string name="product_price_in_list">$ <xliff:g example="5" id="price">%d</xliff:g></string>
+
+    <!-- Title for the activity to add a new product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_product">Add a Product</string>
+
+    <!-- Title for the activity to edit a product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+
+    <string name="category_product">Product</string>
+
+    <string name="category_supplier">Supplier</string>
+
+    <string name="category_image">Image</string>
+
+    <string name="hint_product_name">Name</string>
+
+    <string name="hint_supplier_name">Name</string>
+
+    <string name="hint_supplier_email">Email</string>
+
+    <string name="hint_product_quantity">Quantity</string>
+
+    <string name="hint_product_price">Price</string>
+
+    <string name="button_pick_image">Select image</string>
+
+    <!-- Units for price of the product (currency) [CHAR LIMIT=5] -->
+    <string name="unit_product_price">$</string>
+
+    <string name="order_request_email_subject">Order request for <xliff:g name="productName" example="Milk">%s</xliff:g></string>
+
+</resources>
