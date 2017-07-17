@@ -130,6 +130,14 @@ public class ProductDetailsActivity extends AppCompatActivity implements
 
     }
 
+    private void pickImage() {
+        Intent intent = new Intent();
+        // Show only images, no videos or anything else
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select picture"), PICK_IMAGE_REQUEST);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -145,14 +153,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements
                 e.printStackTrace();
             }
         }
-    }
-
-    private void pickImage() {
-        Intent intent = new Intent();
-        // Show only images, no videos or anything else
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select picture"), PICK_IMAGE_REQUEST);
     }
 
     private void changeProductQuantity(View view) {
@@ -275,22 +275,12 @@ public class ProductDetailsActivity extends AppCompatActivity implements
             return false;
         }
 
-        int productQuantity = 0;
-        if (!TextUtils.isEmpty(productQuantityString)) {
-            productQuantity = Integer.parseInt(productQuantityString);
-        }
-
-        int productPrice = 0;
-        if (!TextUtils.isEmpty(productPriceString)) {
-            productPrice = Integer.parseInt(productPriceString);
-        }
-
         // Create a ContentValues object where column names are the keys,
         // and product attributes from the editor are the values.
         ContentValues values = new ContentValues();
         values.put(ProductEntry.COLUMN_PRODUCT_NAME, productName);
-        values.put(ProductEntry.COLUMN_PRODUCT_QUANTITY, productQuantity);
-        values.put(ProductEntry.COLUMN_PRODUCT_PRICE, productPrice);
+        values.put(ProductEntry.COLUMN_PRODUCT_QUANTITY, Integer.parseInt(productQuantityString));
+        values.put(ProductEntry.COLUMN_PRODUCT_PRICE, Integer.parseInt(productPriceString));
         values.put(ProductEntry.COLUMN_PRODUCT_SUPPLIER_NAME, productSupplierName);
         values.put(ProductEntry.COLUMN_PRODUCT_SUPPLIER_EMAIL, productSupplierEmail);
         values.put(ProductEntry.COLUMN_PRODUCT_IMAGE, productImageData);
@@ -405,7 +395,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements
 
         // This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,   // Parent activity context
-                mCurrentProductUri,         // Query the content URI for the current product
+                mCurrentProductUri,     // Query the content URI for the current product
                 projection,             // Columns to include in the resulting Cursor
                 null,                   // No selection clause
                 null,                   // No selection arguments
@@ -439,7 +429,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements
             String productSupplierEmail = cursor.getString(productSupplierEmailColumnIndex);
             byte[] productImageData = cursor.getBlob(productImageColumnIndex);
             mProductImageBitmap = DbBitmapUtility.getImage(productImageData);
-
             mProductQuantity = productQuantity;
 
             // Update the views on the screen with the values from the database
@@ -463,4 +452,3 @@ public class ProductDetailsActivity extends AppCompatActivity implements
         mProductImageIV.setImageBitmap(null);
     }
 }
-

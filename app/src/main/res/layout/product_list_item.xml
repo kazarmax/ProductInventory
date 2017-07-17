@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?android:attr/selectableItemBackground"
+    android:background="@drawable/item_selector"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_margin"
     android:paddingEnd="@dimen/activity_margin"
     android:paddingLeft="@dimen/activity_margin"
     android:paddingRight="@dimen/activity_margin"
     android:paddingStart="@dimen/activity_margin"
-    android:paddingTop="@dimen/activity_margin">
+    android:paddingTop="@dimen/activity_margin" >
 
     <TextView
         android:id="@+id/product_name"
@@ -59,12 +59,10 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:backgroundTint="#FFB74D"
-            android:drawableLeft="?android:attr/actionModeCutDrawable"
             android:focusable="false"
             android:text="@string/button_sell" />
 
     </RelativeLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -84,7 +82,7 @@
             android:id="@+id/product_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
+            android:paddingLeft="23dp"
             android:textColor="@color/productDetailsPropertyValueColor"
             android:textSize="@dimen/product_details_property_value_text_size"
             android:textStyle="bold"

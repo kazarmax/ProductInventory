@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Inventory</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_delete_all_entries">Удалить все продукты</string>
+    <string name="action_insert_dummy_data">Добавить фейковый продукт</string>
+    <string name="action_order_more">Заказать ещё</string>
+    <string name="action_save">Сохранить</string>
+    <string name="button_pick_image">Выбрать картинку</string>
+    <string name="button_sell">Продать</string>
+    <string name="cancel">Отмена</string>
+    <string name="category_image">Картинка</string>
+    <string name="category_product">Продукт</string>
+    <string name="category_supplier">Поставщик</string>
+    <string name="context_action_delete">Удалить</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_all_products_dialog_msg">Удалить все продукты?</string>
+    <string name="delete_all_products_failed">Не удалось удалить продукты</string>
+    <string name="delete_all_products_successful">Удалено записей: <xliff:g example="5" id="numOfRowsDeleted">%d</xliff:g></string>
+    <string name="delete_dialog_msg">Удалить этот продукт?</string>
+    <string name="delete_selected_product_dialog_msg">Удалить выбранный продукт?</string>
+    <string name="delete_selected_products_dialog_msg">Удалить выбранные продукты?</string>
+    <string name="editor_activity_title_edit_product">Редактировать продукт</string>
+    <string name="editor_activity_title_new_product">Добавить продукт</string>
+    <string name="editor_delete_product_failed">Не удалось удалить продукт</string>
+    <string name="editor_delete_product_successful">Продукт удалён</string>
+    <string name="editor_insert_product_failed">Не удалось сохранить продукт</string>
+    <string name="editor_insert_product_successful">Продукт сохранён</string>
+    <string name="editor_save_product_with_empty_fields">Должны быть заполнены все поля</string>
+    <string name="editor_update_product_failed">Не удалось обновить продукт</string>
+    <string name="editor_update_product_successful">Продукт обновлён</string>
+    <string name="empty_product_list_text">Список продуктов пуст. Добавьте новые продукты с помощью кнопки ниже.</string>
+    <string name="hint_product_name">Наименование</string>
+    <string name="hint_product_price">Стоимость</string>
+    <string name="hint_product_quantity">Количество</string>
+    <string name="hint_supplier_email">Email</string>
+    <string name="hint_supplier_name">Наименование</string>
+    <string name="order_request_email_subject">Заказ на <xliff:g name="productName" example="Milk">%s</xliff:g></string>
+    <string name="product_list_activity_label">Продукты</string>
+    <string name="product_price_in_list"><xliff:g example="5" id="price">%d</xliff:g>₽</string>
+    <string name="product_price_label">Стоимость:</string>
+    <string name="product_quantity_label">Количество:</string>
+    <string name="unit_product_price">₽</string>
+</resources>

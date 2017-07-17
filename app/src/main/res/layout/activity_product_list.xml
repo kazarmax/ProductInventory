@@ -9,7 +9,8 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+         />
 
     <!-- Empty view for the list -->
     <RelativeLayout
@@ -49,19 +50,6 @@
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="#A2AAB0"/>
     </RelativeLayout>
-
-    <!--
-    <TextView
-        android:id="@+id/empty_list_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="@dimen/activity_margin"
-        android:textAlignment="center"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:text="@string/empty_product_list_text"
-        tools:text="Product list is empty. Add new products using the button below" />
-    -->
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

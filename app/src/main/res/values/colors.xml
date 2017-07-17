@@ -6,4 +6,6 @@
 
     <color name="productDetailsPropertyTitleColor">#607D8B</color>
     <color name="productDetailsPropertyValueColor">#2B3D4D</color>
+    <color name="color_action_mode_bg">#90A4AE</color>
+    <color name="color_selected_item_in_listview">#FBE9E7</color>
 </resources>

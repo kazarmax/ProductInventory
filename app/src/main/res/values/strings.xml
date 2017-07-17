@@ -8,6 +8,7 @@
     <string name="action_insert_dummy_data">Insert dummy data</string>
     <string name="action_delete_all_entries">Delete all products</string>
     <string name="action_save">Save</string>
+    <string name="context_action_delete">Delete</string>
     <string name="action_delete">Delete</string>
     <string name="action_order_more">Order more</string>
 
@@ -22,6 +23,12 @@
 
     <!-- Dialog message to ask the user to confirm deleting all products [CHAR LIMIT=NONE] -->
     <string name="delete_all_products_dialog_msg">Delete all products?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting selected products [CHAR LIMIT=NONE] -->
+    <string name="delete_selected_products_dialog_msg">Delete selected products?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting selected product [CHAR LIMIT=NONE] -->
+    <string name="delete_selected_product_dialog_msg">Delete selected product?</string>
 
     <!-- Dialog button text for the option to confirm deletion [CHAR LIMIT=20] -->
     <string name="delete">Delete</string>

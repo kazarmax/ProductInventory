@@ -5,11 +5,8 @@
 
     <!-- Common margin value used throughout the app -->
     <dimen name="activity_margin">16dp</dimen>
-
     <dimen name="max_image_height">300dp</dimen>
-
     <dimen name="product_details_property_title_text_size">16sp</dimen>
-
     <dimen name="product_details_property_value_text_size">16sp</dimen>
 
 </resources>

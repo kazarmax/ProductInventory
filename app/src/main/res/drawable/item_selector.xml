@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Пункт активирован.  В режиме SINGLE_CHOICE_MODE пункт подсвечивается -->
+    <item android:state_activated="true"
+        android:drawable="@color/color_selected_item_in_listview" />
+
+    <!-- По умолчанию -->
+    <item android:drawable="@android:color/transparent" />
+</selector>

@@ -16,7 +16,7 @@ import com.example.android.inventory.data.ProductContract.ProductEntry;
 /**
  * {@link ContentProvider} for Inventory app.
  */
-public class ProductProvider extends ContentProvider{
+public class ProductProvider extends ContentProvider {
 
     /** Tag for the log messages */
     public static final String LOG_TAG = ProductProvider.class.getSimpleName();
