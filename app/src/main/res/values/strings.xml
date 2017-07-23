@@ -4,7 +4,7 @@
     <string name="empty_product_list_text">Product list is empty. Add new products using the button below</string>
     <string name="product_quantity_label">Quantity: </string>
     <string name="product_price_label">Price: </string>
-    <string name="button_sell">Sell</string>
+    <string name="button_sell">-1</string>
     <string name="action_insert_dummy_data">Insert dummy data</string>
     <string name="action_delete_all_entries">Delete all products</string>
     <string name="action_save">Save</string>
@@ -26,6 +26,9 @@
 
     <!-- Dialog message to ask the user to confirm deleting selected products [CHAR LIMIT=NONE] -->
     <string name="delete_selected_products_dialog_msg">Delete selected products?</string>
+
+    <!-- Properties of fake product -->
+    <string name="fake_product_name">Chocolate</string>
 
     <!-- Dialog message to ask the user to confirm deleting selected product [CHAR LIMIT=NONE] -->
     <string name="delete_selected_product_dialog_msg">Delete selected product?</string>
@@ -50,7 +53,7 @@
 
     <string name="delete_all_products_successful">Deleted rows: <xliff:g example="5" id="numOfRowsDeleted">%d</xliff:g></string>
 
-    <string name="product_price_in_list">$ <xliff:g example="5" id="price">%d</xliff:g></string>
+    <string name="product_price_in_list">$ <xliff:g example="5" id="price">%s</xliff:g></string>
 
     <!-- Title for the activity to add a new product [CHAR LIMIT=20] -->
     <string name="editor_activity_title_new_product">Add a Product</string>
@@ -79,6 +82,12 @@
     <!-- Units for price of the product (currency) [CHAR LIMIT=5] -->
     <string name="unit_product_price">$</string>
 
+    <!-- Texts for product order requests -->
     <string name="order_request_email_subject">Order request for <xliff:g name="productName" example="Milk">%s</xliff:g></string>
+    <string name="order_request_send_email">Send email...</string>
+    <string name="order_request_dear_supplier">Dear <xliff:g name="supplierName" example="Nestle">%s</xliff:g></string>
+    <string name="order_request_available_product_items">Available items of product <xliff:g name="productName" example="Milk">%s</xliff:g> are close to completion.\n</string>
+    <string name="order_request_send_us_additional_items">So, please send us additional 100 items. \n\n Thanks!</string>
+
 
 </resources>
